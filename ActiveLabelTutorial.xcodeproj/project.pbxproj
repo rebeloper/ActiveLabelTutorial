@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74467AC92C883061A284276 /* Pods_ActiveLabelTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082E0DA6A70ACF36932540B3 /* Pods_ActiveLabelTutorial.framework */; };
 		C92FFFA821628C9A00B3E93A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFFA721628C9A00B3E93A /* AppDelegate.swift */; };
 		C92FFFAA21628C9A00B3E93A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFFA921628C9A00B3E93A /* ViewController.swift */; };
-		C92FFFAD21628C9A00B3E93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92FFFAB21628C9A00B3E93A /* Main.storyboard */; };
 		C92FFFAF21628C9A00B3E93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92FFFAE21628C9A00B3E93A /* Assets.xcassets */; };
 		C92FFFB221628C9A00B3E93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92FFFB021628C9A00B3E93A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		082E0DA6A70ACF36932540B3 /* Pods_ActiveLabelTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActiveLabelTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8332564F510396E3F226418B /* Pods-ActiveLabelTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActiveLabelTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActiveLabelTutorial/Pods-ActiveLabelTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		8BE487F2E5F544B7C8493DCA /* Pods-ActiveLabelTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActiveLabelTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActiveLabelTutorial/Pods-ActiveLabelTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		C92FFFA421628C9A00B3E93A /* ActiveLabelTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveLabelTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92FFFA721628C9A00B3E93A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92FFFA921628C9A00B3E93A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C92FFFAC21628C9A00B3E93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C92FFFAE21628C9A00B3E93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C92FFFB121628C9A00B3E93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92FFFB321628C9A00B3E93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74467AC92C883061A284276 /* Pods_ActiveLabelTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F406BEBB390F95677F062D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8332564F510396E3F226418B /* Pods-ActiveLabelTutorial.debug.xcconfig */,
+				8BE487F2E5F544B7C8493DCA /* Pods-ActiveLabelTutorial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81D83FFF2959F6FB6656CD1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				082E0DA6A70ACF36932540B3 /* Pods_ActiveLabelTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C92FFF9B21628C9900B3E93A = {
 			isa = PBXGroup;
 			children = (
 				C92FFFA621628C9A00B3E93A /* ActiveLabelTutorial */,
 				C92FFFA521628C9A00B3E93A /* Products */,
+				3F406BEBB390F95677F062D3 /* Pods */,
+				81D83FFF2959F6FB6656CD1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +78,6 @@
 			children = (
 				C92FFFA721628C9A00B3E93A /* AppDelegate.swift */,
 				C92FFFA921628C9A00B3E93A /* ViewController.swift */,
-				C92FFFAB21628C9A00B3E93A /* Main.storyboard */,
 				C92FFFAE21628C9A00B3E93A /* Assets.xcassets */,
 				C92FFFB021628C9A00B3E93A /* LaunchScreen.storyboard */,
 				C92FFFB321628C9A00B3E93A /* Info.plist */,
@@ -71,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C92FFFB621628C9A00B3E93A /* Build configuration list for PBXNativeTarget "ActiveLabelTutorial" */;
 			buildPhases = (
+				0AC7A0D7E7BBBCD611F08C0C /* [CP] Check Pods Manifest.lock */,
 				C92FFFA021628C9A00B3E93A /* Sources */,
 				C92FFFA121628C9A00B3E93A /* Frameworks */,
 				C92FFFA221628C9A00B3E93A /* Resources */,
+				CE49F9994CE14628BFA77349 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +147,51 @@
 			files = (
 				C92FFFB221628C9A00B3E93A /* LaunchScreen.storyboard in Resources */,
 				C92FFFAF21628C9A00B3E93A /* Assets.xcassets in Resources */,
-				C92FFFAD21628C9A00B3E93A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC7A0D7E7BBBCD611F08C0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ActiveLabelTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE49F9994CE14628BFA77349 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ActiveLabelTutorial/Pods-ActiveLabelTutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActiveLabel/ActiveLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActiveLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActiveLabelTutorial/Pods-ActiveLabelTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C92FFFA021628C9A00B3E93A /* Sources */ = {
@@ -143,14 +206,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C92FFFAB21628C9A00B3E93A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C92FFFAC21628C9A00B3E93A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C92FFFB021628C9A00B3E93A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,15 +335,13 @@
 		};
 		C92FFFB721628C9A00B3E93A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8332564F510396E3F226418B /* Pods-ActiveLabelTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				INFOPLIST_FILE = ActiveLabelTutorial/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.ActiveLabelTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -298,15 +351,13 @@
 		};
 		C92FFFB821628C9A00B3E93A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE487F2E5F544B7C8493DCA /* Pods-ActiveLabelTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				INFOPLIST_FILE = ActiveLabelTutorial/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.ActiveLabelTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
